@@ -1,0 +1,42 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add User</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+          <label for="customer_code">Customer code:</label>
+          <input formControlName="customer_code" placeholder="Customer code" name="customer_code" class="form-control" id="customer_code">
+        </div>
+
+        <div class="form-group">
+            <label for="Name"> Name:</label>
+            <input formControlName="Name" placeholder="Name" name="Name" class="form-control" id="Name">
+          </div>
+
+          <div class="form-group">
+              <label for="address">Address:</label>
+              <input formControlName="address" placeholder="Address" name="address" class="form-control" id="address">
+            </div>
+
+            <div class="form-group">
+                <label for="pincode">Pincode:</label>
+                <input formControlName="pincode" placeholder="Pincode" name="Pincode" class="form-control" id="pincode">
+              </div>
+
+              <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" formControlName="email" placeholder="Email" name="email" class="form-control" id="email">
+    </div>
+
+    <div class="form-group">
+      <label for="contact">Contact Number:</label>
+      <input formControlName="contact" placeholder="Contact Number" name="contact" class="form-control" id="contact">
+    </div>
+
+    <div class="form-group">
+      <label for="poc">Point of Contact:</label>
+      <input formControlName="poc" placeholder="Point of Contact" name="poc" class="form-control" id="poc">
+    </div>
+
+    <button class="btn btn-success">Update</button>
+  </form>
+</div>
